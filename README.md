@@ -43,6 +43,10 @@
     }
 ```
 ---
+
+## Java 10
+
+---
 - ### Inference of Variables
 
 - Instead of use like this
