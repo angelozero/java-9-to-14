@@ -1,9 +1,11 @@
 package com.angelozero.java9to14.java_9;
 
+import org.springframework.stereotype.Service;
+
 import java.util.*;
 
+@Service
 public class CollectionFactories {
-
 
     @Deprecated
     public String generateAnOldList() {
@@ -22,7 +24,7 @@ public class CollectionFactories {
         listOfMapStrings.put(2, "zero");
         listOfMapStrings.put(3, "this is an immutable string list");
 
-        return " You don't need to use it like this anymore";
+        return "You don't need to use it like this anymore";
     }
 
     public List<String> generateListOfStrings() {

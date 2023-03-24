@@ -1,6 +1,9 @@
 # News about Java versions ( 9 to 14 )
 
 ## Java 9
+
+---
+ 
 - ### Collection Factories
 - Instead of use like this
 
@@ -39,7 +42,30 @@
         return Map.of(1, "angelo", 2, "zero", 3, "this is an immutable map string list");
     }
 ```
-- Inference of Variables
+---
+- ### Inference of Variables
+
+- Instead of use like this
+
 ```javascript
-// test
+    @Deprecated
+    public String oldTypeOfVariable() {
+    
+        Map<Integer, String> listOfMapStrings = new HashMap<>();
+        listOfMapStrings.put(1, "angelo zero");
+    
+        return "You don't need to use it like this anymore";
+    }
 ```
+- Use like this
+
+```javascript
+    public Map<Integer, String> newTypeOfVariable() {
+    
+        var listOfMapStrings = new HashMap<Integer, String>();
+        listOfMapStrings.put(1, "angelo zero");
+    
+        return listOfMapStrings;
+    }
+```
+---
