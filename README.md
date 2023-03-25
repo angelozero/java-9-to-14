@@ -1,8 +1,31 @@
 # News about Java versions ( 9 to 14 )
 
 ## Java 9
-- Collection Factories
+- ### Collection Factories
+- Instead of use like this
 
+```javascript
+    @Deprecated
+    public String generateAnOldList() {
+        List<String> listOfListStrings = new ArrayList<>();
+        listOfListStrings.add("angelo");
+        listOfListStrings.add("zero");
+        listOfListStrings.add("this is an immutable string list");
+
+        Set<String> listOfSetStrings = new HashSet<>();
+        listOfSetStrings.add("angelo");
+        listOfSetStrings.add("zero");
+        listOfSetStrings.add("this is an immutable string list");
+
+        Map<Integer, String> listOfMapStrings = new HashMap<>();
+        listOfMapStrings.put(1, "angelo");
+        listOfMapStrings.put(2, "zero");
+        listOfMapStrings.put(3, "this is an immutable string list");
+        
+        return " You don't need to use it like this anymore";
+    }
+```
+- Use like this
 ```javascript
     public List<String> generateListOfStrings() {
         return List.of("angelo", "zero", "this is an immutable string list");
