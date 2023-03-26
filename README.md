@@ -16,3 +16,4 @@
         return Map.of(1, "angelo", 2, "zero", 3, "this is an immutable map string list");
     }
 ```
+- Inference of Variables
