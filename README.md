@@ -17,3 +17,6 @@
     }
 ```
 - Inference of Variables
+```javascript
+// test
+```
