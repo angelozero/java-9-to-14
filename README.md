@@ -1,9 +1,9 @@
 # News about Java versions ( 9 to 14 )
 
+---
+
 ## Java 9
 
----
- 
 - ### Collection Factories
 - Instead of use like this
 
@@ -46,7 +46,6 @@
 
 ## Java 10
 
----
 - ### Inference of Variables
 
 - Instead of use like this
@@ -72,11 +71,50 @@
         return listOfMapStrings;
     }
 ```
+
+---
+
+## Java 11
+
+- ### Http 2 Client Api
+
+- Instead of use like this
+
+```javascript
+    @Deprecated
+    public String oldHttpClientConnection() throws IOException {
+        URL url = new URL("www.google.com");
+        URLConnection connection = url.openConnection();
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+
+        String line = "";
+
+        while (reader.readLine() != null) {
+            line = line.concat(reader.readLine()).concat(System.lineSeparator());
+        }
+        return "You don't need to use it like this anymore";
+    }
+```
+- Use like this
+
+```javascript
+        public String newHttpClientConnection() throws URISyntaxException, IOException, InterruptedException {
+        HttpClient httpClient = HttpClient.newHttpClient();
+        HttpRequest httpRequest = HttpRequest
+                .newBuilder(new URI("www.google.com"))
+                .GET()
+                .build();
+
+        HttpResponse<String> response = httpClient.send(httpRequest, BodyHandlers.ofString());
+
+        return response.body();
+    }
+```
+
 ---
 
 ## Java 13
-
----
 
 - ### Text Blocks
 
@@ -115,8 +153,6 @@
 ---
 
 ## Java 14
-
----
 
 - ### Switch Expression
 

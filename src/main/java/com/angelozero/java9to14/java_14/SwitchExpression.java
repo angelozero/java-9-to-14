@@ -23,9 +23,9 @@ public class SwitchExpression {
     public String newSwitchCase(String name) {
 
         return switch (name) {
-            case "zero" -> "Almost there !";
-            case "angelo" -> "This is the correct name !";
-            default -> "You don't need to use it like this anymore";
+            case "zero" -> "zero is not the name but you are almost there !";
+            case "angelo" -> "angelo is the correct name !";
+            default -> "You don't need to use an old switch-case function anymore";
         };
 
     }
