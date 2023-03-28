@@ -74,6 +74,10 @@
 ```
 ---
 
+## Java 13
+
+---
+
 - ### Text Blocks
 
 - Instead of use like this
@@ -109,3 +113,41 @@
     }
 ```
 ---
+
+## Java 14
+
+---
+
+- ### Switch Expression
+
+- Instead of use like this
+
+```javascript
+    @Deprecated
+    public String oldSwitchCase(String name) {
+
+        switch (name) {
+            case "zero":
+                return "Almost there !";
+
+            case "angelo":
+                return "This is the correct name !";
+
+            default:
+                return "You don't need to use it like this anymore";
+        }
+    }
+```
+- Use like this
+
+```javascript
+        public String newSwitchCase(String name) {
+
+        return switch (name) {
+            case "zero" -> "Almost there !";
+            case "angelo" -> "This is the correct name !";
+            default -> "You don't need to use it like this anymore";
+        };
+        
+    }
+```
