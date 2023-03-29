@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "c17f3988-5555-411d-9b80-76b70f500ad1",
+		"name": "Java 9 to 14",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12384551"
+	},
+	"item": [
+		{
+			"name": "Collection Factories List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/collection-factories-list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"collection-factories-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Collection Factories Set",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/collection-factories-set",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"collection-factories-set"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Collection Factories Map",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/collection-factories-map",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"collection-factories-map"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inference Variables",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/inference-variables",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inference-variables"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Http2 Client Api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/http2-client-api",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"http2-client-api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Http2 Client Api Async",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/http2-client-api-async",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"http2-client-api-async"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Async Calls",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/async-calls",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"async-calls"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Text Blocks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/text-blocks",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"text-blocks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Switch Expression",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/switch-expression",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"switch-expression"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

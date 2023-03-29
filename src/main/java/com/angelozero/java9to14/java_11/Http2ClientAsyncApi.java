@@ -1,5 +1,6 @@
 package com.angelozero.java9to14.java_11;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
@@ -12,12 +13,12 @@ import java.net.URLConnection;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
 import static java.net.http.HttpResponse.BodyHandlers;
 
 @Service
+@Slf4j
 public class Http2ClientAsyncApi {
 
     public String newHttpClientConnection() throws URISyntaxException, InterruptedException, ExecutionException {
@@ -29,7 +30,7 @@ public class Http2ClientAsyncApi {
                 .build();
 
         HttpResponse<String> response = httpClient.sendAsync(httpRequest, BodyHandlers.ofString())
-                .whenComplete((success, error) -> System.out.println("\nSuccess http2 client async api call!\n"))
+                .whenComplete((success, error) -> log.info("Success http2 client async api call!"))
                 .get();
 
         return response.body();
