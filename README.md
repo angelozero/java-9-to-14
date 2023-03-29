@@ -5,7 +5,7 @@
 ## Java 9
 
 - ### Collection Factories
-- Instead of use like this
+- Instead of use this
 
 ```javascript
     @Deprecated
@@ -48,7 +48,7 @@
 
 - ### Inference of Variables
 
-- Instead of use like this
+- Instead of use this
 
 ```javascript
     @Deprecated
@@ -78,7 +78,7 @@
 
 - ### Http 2 Client Api
 
-- Instead of use like this
+- Instead of use this
 
 ```javascript
     @Deprecated
@@ -118,7 +118,7 @@
 
 - ### Text Blocks
 
-- Instead of use like this
+- Instead of use this
 
 ```javascript
     @Deprecated
@@ -156,7 +156,7 @@
 
 - ### Switch Expression
 
-- Instead of use like this
+- Instead of use this
 
 ```javascript
     @Deprecated
